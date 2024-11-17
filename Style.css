@@ -20,7 +20,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Add overlay for better text readability */
+    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
 
@@ -28,49 +28,70 @@
     border-radius: 10px;
 }
 .cta-section {
-    background-color: rgb(58, 78, 58); /* Dark green color */
+    background-color: rgb(58, 78, 58); 
     padding: 50px 0;
 }
 
 .stats-section h3 {
-    color: rgb(56, 75, 56); /* Same color as CTA background */
+    color: rgb(56, 75, 56); 
 }
 
 .btn-success {
-    background-color: #1A3636; /* Button matches the green theme */
+    background-color: #1A3636; 
     border: none;
 }
-/* Transparent Navbar with White Line */
+
 .custom-navbar {
    
-    border-bottom: 1px solid #ffffff; /* White line below navbar */
-    transition: background-color 0.3s ease, border-color 0.3s ease, margin 0.3s ease; /* Smooth transition */
-    margin-left: 5rem; /* Initial margin */
-    margin-right: 5rem; /* Optional right margin */
+    border-bottom: 1px solid #ffffff; 
+    transition: background-color 0.3s ease, border-color 0.3s ease, margin 0.3s ease; 
+    margin-left: 5rem; 
+    margin-right: 5rem; 
 }
 
 .custom-navbar.no-margin {
-    margin-left: 0; /* Remove left margin on scroll */
-    margin-right: 0; /* Remove right margin on scroll */
+    margin-left: 0; 
+    margin-right: 0; 
     background-color: rgba(0, 0, 0, 0.596);
 }
 
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #ffffff; /* White text for links */
+    color: #ffffff; 
     transition: color 0.3s ease;
 }
 
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #f0f0f0; /* Slightly lighter color on hover */
+    color: #f0f0f0;
 }
 
-/* Sticky Navbar Effect on Scroll */
+
 .custom-navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.8); /* Darker background when scrolling */
-    border-bottom: 1px solid #ffffff; /* Keep white line when scrolling */
+    background-color: rgba(0, 0, 0, 0.8); 
+    border-bottom: 1px solid #ffffff; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 
