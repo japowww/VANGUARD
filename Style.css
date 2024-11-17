@@ -52,7 +52,7 @@
 .custom-navbar.no-margin {
     margin-left: 0; 
     margin-right: 0; 
-    background-color: rgba(0, 0, 0, 0.596);
+    background-color:  rgb(58, 78, 58);
 }
 
 
@@ -68,9 +68,62 @@
 
 
 .custom-navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color:  rgb(58, 78, 58); 
     border-bottom: 1px solid #ffffff; 
 }
+
+
+
+
+
+
+.footer {
+    background-color:  rgb(58, 78, 58);
+    color: white;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.footer-description {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #ccc;
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
 
 
 
