@@ -5,14 +5,19 @@
     height: 100vh; 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     text-align: center;
     position: relative;
 }
 
 .hero-content {
+    margin-left: 10rem;
     position: relative;
     z-index: 2;
+}
+.h1{
+    font-size: 70px;
+
 }
 
 .hero-section::after {
