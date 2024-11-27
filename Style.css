@@ -5,22 +5,40 @@
     height: 100vh; 
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: left;
+    text-align: left;
     position: relative;
 }
 
 .hero-content {
+    margin-left: 10rem;
     position: relative;
     z-index: 2;
 }
+.h1{
+    font-size: 55px;
+
+}
+
+.elegant-text {
+    font-family: 'Times New Roman', serif;  /* Use a serif font for a classic, elegant feel */
+    font-size: 2.5rem;   /* Slightly larger font size */
+    line-height: 1.3;    /* Improved line height for readability */
+    color: #0a0a0a;      /* Soft, muted text color */
+    margin-left: 30px;   /* Space between image and text */
+    font-weight: bold;  /* Italicize the text for added elegance */
+   
+    text-align: center; /* Justified alignment for a clean, structured appearance */
+    text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.2);  /* Subtle text shadow for depth */
+}
+
 
 .hero-section::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.574); 
     z-index: 1;
 }
 
@@ -56,6 +74,9 @@
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3); 
 }
 
+.custom-bg-dark {
+    background-color: #d0cfcfc5; /* Choose your desired dark shade */
+}
 
 
 
