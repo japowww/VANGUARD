@@ -1,12 +1,12 @@
 .hero-section {
-    background-image: url('pics/2.webp'); 
-    background-size: cover; 
-    background-position: center; 
-    height: 100vh; 
+    background-image: url('/pics/2.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ensure full viewport height */
     display: flex;
     align-items: center;
-    justify-content: left;
-    text-align: left;
+    justify-content: center; /* Center content inside hero-section */
+    text-align: center;
     position: relative;
 }
 
@@ -17,6 +17,8 @@
 }
 .h1{
     font-size: 55px;
+    text-align: left;
+    margin-left: 150px;
 
 }
 
@@ -38,8 +40,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.574); 
-    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.574); /* Dark filter */
+    z-index: 0; /* Ensure it's behind the content */
 }
 
 .about-section img {
@@ -95,6 +97,44 @@
 .custom-dark-green-btn:hover {
     background-color: #004d00; /* Darker green on hover */
     border-color: #003d00;     /* Darker border color on hover */
+}
+
+.water {
+    width: 70%; /* Keep the original width */
+    max-width: 600px; /* Keep the max-width */
+    margin-top: 40rem;
+    margin-bottom: 40rem;
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto; /* Center the container horizontally */
+    
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Arrange the description above the images */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    gap: 2rem; /* Space between the description and the images */
+}
+
+.water-description {
+    font-size: 1.2rem; /* Adjust the size of the description text */
+    color: #ffffff; /* White text for contrast */
+    text-align: center; /* Center the description text */
+    margin-bottom: 1rem; /* Add space below the description */
+}
+
+.images-container {
+    display: flex; /* Keep images in a row */
+    gap: 5rem; /* Space between images */
+    justify-content: center; /* Center the images */
+    align-items: center; /* Ensure vertical alignment of images */
+}
+
+.images-container img {
+    width: 70%; /* Set image size */
+    height: auto; /* Keep the aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds shadow to images */
 }
 
 

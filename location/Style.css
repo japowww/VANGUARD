@@ -103,7 +103,7 @@
     margin-right: 6rem; 
     border-bottom: 1px solid #ffffff; 
     transition: background-color 0.3s ease, border-color 0.3s ease, margin 0.3s ease; 
-   
+   z-index: 1030;
 }
 
 .custom-navbar.no-margin {
@@ -138,6 +138,17 @@
     display: inline-block;
     margin-right: 3rem;
   
+}
+
+.custom-dark-green-btn {
+    background-color: #032e03; /* Custom darker green color */
+    border-color: #032e03;     /* Border color */
+    color: white;              /* Text color */
+}
+
+.custom-dark-green-btn:hover {
+    background-color: #004d00; /* Darker green on hover */
+    border-color: #003d00;     /* Darker border color on hover */
 }
 
 
@@ -228,27 +239,31 @@
 
 
 
-/* Modal container */
 .modal {
     display: none; /* Hidden by default */
     position: fixed;
-    z-index: 1000;
+    z-index: 1050;  /* Ensure the modal is above the navbar */
     padding-top: 50px;
-    left: 0;
-    top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center the modal */
     width: 100%;
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+    
 }
 
 /* Modal content (image) */
 .modal-content {
-    margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width: auto;  /* Allow image to adjust width */
+    max-width: 90%;  /* Limit width to 90% of viewport */
+    max-height: 80%; /* Limit height to 80% of viewport */
+    margin: auto;  /* Center the image horizontally */
+    object-fit: contain; /* Ensure image fits within the modal, preserving aspect ratio */
     border-radius: 8px;
+    
 }
 
 /* Caption text */
