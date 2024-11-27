@@ -86,6 +86,20 @@
 }
 
 
+.custom-dark-green-btn {
+    background-color: #032e03; /* Custom darker green color */
+    border-color: #032e03;     /* Border color */
+    color: white;              /* Text color */
+}
+
+.custom-dark-green-btn:hover {
+    background-color: #004d00; /* Darker green on hover */
+    border-color: #003d00;     /* Darker border color on hover */
+}
+
+
+
+
 
 
 
