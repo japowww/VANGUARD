@@ -1,0 +1,36 @@
+[
+    {
+        "latitude": 8.331246,
+        "longitude": 124.959404,
+        "message": "Mt. Palaopao",
+        "imageUrl": "/pics/peak.jpg"
+    },
+    {
+        "latitude": 8.368200,
+        "longitude": 124.866691,
+        "message": "Manolo Fortich Gymnasium"
+    },
+    {
+        "latitude": 8.360261,
+        "longitude": 124.86832,
+        "message": "Northern Bukidnon State College"
+    },
+
+    {
+        "latitude": 8.367833,
+        "longitude":124.866063,
+        "message": "Manolo Fortich Plaza"
+    },
+    {
+        "latitude": 8.365376,
+        "longitude": 124.865601,
+        "message": "BINHI Bank"
+
+    },
+    {
+        "latitude":8.367788,
+        "longitude": 124.865370,
+        "message": "NOKNOK Fried Chicken"
+
+    }   
+]
