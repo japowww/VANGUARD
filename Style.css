@@ -77,6 +77,22 @@
 .custom-bg-dark {
     background-color: #d0cfcfc5; /* Choose your desired dark shade */
 }
+.search-input-group {
+    display: flex; /* Use Flexbox for better alignment */
+    align-items: center; /* Align items vertically centered */
+    width: 100%; /* Ensure it fills the available width */
+    position: relative; /* Keep the button aligned with the input */
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
 
 
 
