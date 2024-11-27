@@ -21,12 +21,18 @@ class LeafletMap {
         const popupContent = `
             <div style="text-align: center;">
                 <h2>${message}</h2>
-                <img src="${imageUrl}" alt="${message}" style="width: 150%; max-width: 200px; height: auto; border-radius: 8px; margin-top: 10px;">
+                <img 
+                    src="${imageUrl}" 
+                    alt="${message}" 
+                    style="width: 150%; max-width: 200px; height: auto; border-radius: 8px; margin-top: 10px; cursor: pointer;"
+                    onclick="showModal('${imageUrl}', '${message}')"
+                >
             </div>
         `;
         const marker = L.marker([lat, lng]).addTo(this.map);
         marker.bindPopup(popupContent);
     }
+    
 
     loadMarkersFromJson(url) {
         fetch(url)
@@ -40,6 +46,6 @@ class LeafletMap {
     }
 }
 
-const myMap = new LeafletMap('map', [8.331246,124.959404], 18);
+const myMap = new LeafletMap('map', [8.331246,124.959404], 15);
 
 myMap.loadMarkersFromJson('map1.json');

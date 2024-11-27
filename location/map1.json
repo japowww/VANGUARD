@@ -6,31 +6,36 @@
         "imageUrl": "/pics/peak.jpg"
     },
     {
-        "latitude": 8.368200,
-        "longitude": 124.866691,
-        "message": "Manolo Fortich Gymnasium"
+       "latitude":8.339148,
+        "longitude": 124.956726,
+        "message": "Trek Starting Point",
+        "imageUrl": "/pics/trek starting point.jpg"
     },
     {
-        "latitude": 8.360261,
-        "longitude": 124.86832,
-        "message": "Northern Bukidnon State College"
+        "latitude": 8.335678,
+        "longitude":124.957832,
+        "message": "Water Source 1",
+        "imageUrl": "/pics/water source 1.jpg"
     },
 
     {
-        "latitude": 8.367833,
-        "longitude":124.866063,
-        "message": "Manolo Fortich Plaza"
+        "latitude":8.336875,
+        "longitude":124.956309,
+        "message": "Trail Route 1 ",
+        "imageUrl": "/pics/trail route 1.jpg"
     },
     {
-        "latitude": 8.365376,
-        "longitude": 124.865601,
-        "message": "BINHI Bank"
+        "latitude": 8.332544,
+        "longitude": 124.959529,
+        "message": "Trail Route 2 ",
+        "imageUrl": "/pics/trail route 2.jpg"
 
     },
     {
-        "latitude":8.367788,
-        "longitude": 124.865370,
-        "message": "NOKNOK Fried Chicken"
+        "latitude":8.331048,
+        "longitude":124.959312,
+        "message": "Water Source 2",
+         "imageUrl": "/pics/water source 2.jpg"
 
     }   
 ]
