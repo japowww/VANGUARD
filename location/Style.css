@@ -8,6 +8,20 @@
     justify-content: left;
     text-align: left;
     position: relative;
+    padding: 50px 0;
+    text-align: center;
+}
+.hero-heading {
+    position: absolute; /* Overlay heading on top of the map */
+    top: 20px; /* Adjust vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Ensure perfect centering */
+    font-size: 2.5rem; /* Adjust font size */
+    color: #ffffff; /* Text color */
+    z-index: 10; /* Ensure heading is above the map */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
+    font-weight: bold;
+    margin-top: 5rem;
 }
 
 .hero-content {
@@ -199,12 +213,14 @@
 
 #map {
     height: 50vh;
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    position: relative; /* Ensure proper stacking */
-    z-index: 2; /* Place above other elements */
-    pointer-events: auto; /* Allow pointer interactions */
+    width: 90%;    
+    max-width: 1000px; 
+    margin: 0 auto; 
+    position: relative; 
+    z-index: 2; 
+    pointer-events: auto;
+    margin-top: 8rem;
+   
 }
 
 @media (min-width: 768px) {  
