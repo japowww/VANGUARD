@@ -1,6 +1,6 @@
 const waterSources = [
-    { name: "Water Source 1", url: "/water/page1.html" },  // Absolute path
-    { name: "Water Source 2", url: "/water/page2.html" }, // Relative path (one level up)
+    { name: "Water Source 1", url: "/water/page1.html" },  
+    { name: "Water Source 2", url: "/water/page2.html" }, 
 ];
 
 document.getElementById('waterSourceForm').addEventListener('submit', function (event) {
@@ -22,9 +22,15 @@ document.getElementById('waterSourceForm').addEventListener('submit', function (
             resultButton.textContent = source.name;
             resultButton.setAttribute('data-url', source.url);  
 
+            // Create an anchor tag dynamically
+            const link = document.createElement('a');
+            link.href = source.url;  // Set the href to the page URL
+            link.style.display = "none";  // Hide the link
+            resultButton.appendChild(link);  // Append the link to the button
+
             resultButton.addEventListener('click', function () {
-                // Ensure the window location URL is correct
-                window.location.href = source.url;  
+                // Simulate a click on the link
+                link.click();  
             });
 
             resultsContainer.appendChild(resultButton);
