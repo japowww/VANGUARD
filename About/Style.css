@@ -1,0 +1,430 @@
+.hero-section {
+    background-image: url('/pics/2.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    position: relative;
+    padding: 50px 0;
+    text-align: center;
+}
+.hero-heading {
+    position: relative; /* So it sits in front of ::after */
+    z-index: 2; /* Ensures it is above the overlay */
+    font-size: 2rem;  
+    color: #ffffff;  
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);  
+    font-weight: bold;
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+}
+
+.hero-logo {
+    position: relative; /* Ensures it's positioned within the flex container */
+    z-index: 2; /* Place the logo in front of the ::after pseudo-element */
+    width: 350px;  
+    height: auto;  
+    border-radius: 8px;  
+    margin-left: 20px; /* Adds spacing from the edge */
+}
+
+.hero-content {
+    position: relative; /* Ensures content is in front of the overlay */
+    z-index: 2; /* Place the content in front of the ::after */
+    color: #ffffff; /* Text color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Optional text shadow */
+    margin-right: 50px; /* Add spacing on the right */
+    margin-left: 50px;  
+
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+}
+
+.hero-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-right: 50px;  
+    margin-left: 50px; 
+    text-align: justify;
+}
+.h1{
+    font-size: 55px;
+
+}
+
+.elegant-text {
+    font-family: 'Times New Roman', serif;   
+    font-size:20px;    
+    line-height: 1.3;    
+    color: #ffffff;       
+    margin-left: 30px;    
+    font-weight: bold;   
+
+    text-align: center;  
+    text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.2);   
+}
+
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.675);  
+    z-index: 0; /* Ensure the overlay is below everything else */
+}
+.about-section {
+    background-color:rgb(56, 75, 56); /* Light blue */
+    padding: 50px 0; /* Adjust spacing if needed */
+}
+.about-section img {
+    border-radius: 10px;
+}
+.about-section .img-fluid {
+    max-width: 100%; /* Keep the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+.cta-section {
+    background-color: rgb(58, 78, 58); 
+    padding: 50px 0;
+}
+
+.stats-section h3 {
+    color: rgb(56, 75, 56); 
+}
+
+.btn-success {
+    background-color: #1A3636; 
+    border: none;
+}
+
+.row .col-md-6 img {
+    width: 90%; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+
+.row .col-md-6 img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.custom-bg-dark {
+    background-color: #d0cfcfc5;  
+}
+
+
+
+
+
+
+
+.custom-navbar {
+    margin-left: 6rem; 
+    margin-right: 6rem; 
+    border-bottom: 1px solid #ffffff; 
+    transition: background-color 0.3s ease, border-color 0.3s ease, margin 0.3s ease; 
+   
+}
+
+.custom-navbar.no-margin {
+    margin-left: 0; 
+    margin-right: 0; 
+    background-color:  rgb(58, 78, 58);
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; 
+    transition: color 0.3s ease;
+ 
+}
+
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #f0f0f0;
+}
+
+
+.custom-navbar.scrolled {
+    background-color:  rgb(58, 78, 58); 
+    border-bottom: 1px solid #ffffff; 
+    
+    
+}
+
+.navbar-logo {
+    height: 50px; 
+    width: auto;
+    display: inline-block;
+    margin-right: 3rem;
+  
+}
+
+.custom-about-section {
+    background-color: #f0f8f2; /* Light green background */
+    padding: 60px 0;
+    border-radius: 15px; /* Soft rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quote-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color:rgb(47, 75, 47); /* Dark Green */
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+
+.description-text {
+    font-size: 1.1rem;
+    color: #171515;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.image-container img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .custom-about-section {
+        padding: 40px 15px;
+    }
+    
+    .quote-text {
+        font-size: 1.5rem;
+    }
+    
+    .description-text {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+.footer {
+    background-color:  rgb(58, 78, 58);
+    color: white;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.footer-description {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #ccc;
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer {
+    background: url ('')
+}
+
+
+
+
+#map {
+    height: 50vh;
+    width: 90%;    
+    max-width: 1000px; 
+    margin: 0 auto; 
+    position: relative; 
+    z-index: 2; 
+    pointer-events: auto;
+    margin-top: 8rem;
+   
+}
+
+@media (min-width: 768px) {  
+    #map {
+        width: 80%;  
+        height: 60vh;  
+    }
+}
+
+@media (min-width: 1024px) {  
+    #map {
+        width: 70%;  
+        height: 70vh;  
+    }
+}
+
+
+
+/* Modal container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+}
+
+/* Modal content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 8px;
+}
+
+/* Caption text */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.custom-bg-dark {
+    background-color: #2a3a2c; /* Dark Greenish background */
+    color: #fff;
+}
+
+.card-body {
+    background-color: #f9f9f9; /* Light background for the card body */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content is spaced evenly */
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-img-top {
+    border-radius: 50%; /* Makes the images circular */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+.card {
+    border-radius: 3px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Ensures the card stretches to fill its container */
+}
+
+.card-body p {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px; /* Adjust image size for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
