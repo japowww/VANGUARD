@@ -209,6 +209,7 @@
 .footer-logo {
     font-size: 1.8rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .footer-description {
@@ -236,6 +237,7 @@
     color: #ccc;
     text-decoration: none;
     font-size: 0.9rem;
+    text-align: center;
 }
 
 .footer-link:hover {
@@ -251,6 +253,7 @@
 .footer {
     background: url ('')
 }
+
 
 
 
