@@ -1,5 +1,5 @@
 .hero-section {
-    background-image: url('/pics/2.webp');
+    background-image: url('../pics/2.webp');
     background-size: cover;
     background-position: center;
     height: 100vh; /* Ensure full viewport height */
