@@ -1,6 +1,6 @@
 const waterSources = [
-    { name: "Water Source 1", url: "/water/page1.html" },  // Absolute path
-    { name: "Water Source 2", url: "/water/page2.html" }, // Relative path (one level up)
+    { name: "Water Source 1", url: "../water/page1.html" },  // Absolute path
+    { name: "Water Source 2", url: "../water/page2.html" }, // Relative path (one level up)
 ];
 
 document.getElementById('waterSourceForm').addEventListener('submit', function (event) {
