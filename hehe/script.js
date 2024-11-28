@@ -1,7 +1,7 @@
 
 const waterSources = [
-    { name: "Water Source 1", url: "/water/page1.html"},
-    { name: "Water Source 2", url: "/water/page2.html"},
+    { name: "Water Source 1", url: "/water/page1" },
+    { name: "Water Source 2", url: "../water/page2" },
 ];
 
 document.getElementById('waterSourceForm').addEventListener('submit', function (event) {
