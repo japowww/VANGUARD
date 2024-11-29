@@ -1,5 +1,5 @@
 .hero-section {
-    background-image: url('/pics/2.webp'); 
+    background-image: url('../pics/2.webp'); 
     background-size: cover; 
     background-position: center; 
     height: 100vh; 
@@ -28,7 +28,7 @@
     width: 350px;  
     height: auto;  
     border-radius: 8px;  
-    margin-left: 20px; /* Adds spacing from the edge */
+    margin-left: 10rem; /* Adds spacing from the edge */
 }
 
 .hero-content {
@@ -60,11 +60,24 @@
 }
 
 .elegant-text {
-    font-family: 'Times New Roman', serif;   
-    font-size:20px;    
+    font-family:Arial, Helvetica, sans-serif;   
+    font-size: 30px;   
     line-height: 1.3;    
     color: #ffffff;       
-    margin-left: 30px;    
+    margin-left: 9rem;  
+    margin-right: 9rem;  
+    font-weight: bold;   
+
+    text-align: center;  
+    text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.2);   
+}
+.info {
+    font-family:Arial, Helvetica, sans-serif;   
+    font-size: 40px;   
+    line-height: 1.3;    
+    color: #ffffff;       
+    margin-left: 9rem;  
+    margin-right: 9rem;  
     font-weight: bold;   
 
     text-align: center;  

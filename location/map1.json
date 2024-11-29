@@ -3,39 +3,36 @@
         "latitude": 8.331246,
         "longitude": 124.959404,
         "message": "Mt. Palaopao",
-        "imageUrl": "/pics/peak.jpg"
+        "imageUrl": "../pics/peak.jpg"
     },
     {
-       "latitude":8.339148,
-        "longitude": 124.956726,
+        "latitude": 8.331807,
+        "longitude": 124.959205,
         "message": "Trek Starting Point",
-        "imageUrl": "/pics/trek starting point.jpg"
+        "imageUrl": "../pics/trek starting point.jpg"
     },
     {
-        "latitude": 8.335678,
-        "longitude":124.957832,
+        "latitude": 8.331488,
+        "longitude":124.959173,
         "message": "Water Source 1",
-        "imageUrl": "/pics/water source 1.jpg"
-    },
-
-    {
-        "latitude":8.336875,
-        "longitude":124.956309,
-        "message": "Trail Route 1 ",
-        "imageUrl": "/pics/trail route 1.jpg"
+        "imageUrl": "../pics/water source 1.jpg"
     },
     {
-        "latitude": 8.332544,
-        "longitude": 124.959529,
-        "message": "Trail Route 2 ",
-        "imageUrl": "/pics/trail route 2.jpg"
-
+        "latitude": 8.331653,
+        "longitude":124.959361,
+        "message": "Trail Route 1",
+        "imageUrl": "../pics/trail route 1.jpg"
     },
     {
-        "latitude":8.330942,
-        "longitude":124.959381,
+        "latitude": 8.331398,
+        "longitude": 124.959356,
+        "message": "Trail Route 2",
+        "imageUrl": "../pics/trail route 2.jpg"
+    },
+    {
+        "latitude":8.331016,
+        "longitude": 124.959581,
         "message": "Water Source 2",
-         "imageUrl": "/pics/water source 2.jpg"
-
-    }   
+        "imageUrl": "../pics/water source 2.jpg"
+    }
 ]
