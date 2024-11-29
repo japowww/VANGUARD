@@ -71,17 +71,31 @@ class LeafletMap extends BaseMap {
             iconAnchor: [16, 32],
             popupAnchor: [0, -30],
         });
-
-        const popupContent = `
-            <div style="text-align: center;">
-                <h2>${message}</h2>
-                <img 
-                    src="${imageUrl}" 
-                    alt="${message}" 
-                    style="width: 150%; max-width: 200px; height: auto; border-radius: 8px; margin-top: 10px; cursor: pointer;"
-                >
-            </div>
-        `;
+    
+        const popupContent = document.createElement('div');
+        popupContent.style.textAlign = 'center';
+    
+        // Add title/message
+        const title = document.createElement('h2');
+        title.textContent = message;
+        popupContent.appendChild(title);
+    
+        // Add image
+        const img = document.createElement('img');
+        img.src = imageUrl;
+        img.alt = message;
+        img.style.width = '150%';
+        img.style.maxWidth = '200px';
+        img.style.height = 'auto';
+        img.style.borderRadius = '8px';
+        img.style.marginTop = '10px';
+        img.style.cursor = 'pointer';
+    
+        // Add click event to open modal
+        img.onclick = () => showModal(imageUrl, message);
+    
+        popupContent.appendChild(img);
+    
         const marker = L.marker([lat, lng], { icon: customIcon }).addTo(this.map);
         marker.bindPopup(popupContent);
     }
@@ -114,7 +128,7 @@ class LeafletMap extends BaseMap {
 }
 
 // Usage example
-const myMap = new LeafletMap('map', [8.331246, 124.959404], 15);
+const myMap = new LeafletMap('map', [8.331246, 124.959404], 25);
 
 // Load markers from your JSON file
 myMap.loadMarkersFromJson('map1.json');
