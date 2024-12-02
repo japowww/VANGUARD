@@ -68,7 +68,31 @@
     justify-content: center; /* Center content inside hero-section */
     text-align: center;
     position: relative;
+    z-index: 1;
 }
+.stats-section::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.568); /* Dark filter */
+    z-index: 0;
+
+}
+.text-section {
+    position: relative;
+    z-index: 2; /* Ensures text appears above any overlapping background or elements */
+}
+
+.custom-bg-dark {
+    background-color: #000; /* Dark background */
+}
+
+img {
+    position: relative;
+    z-index: 1; /* Ensure image stays behind if needed */
+}
+
 
 .btn-success {
     background-color: #1A3636; 
