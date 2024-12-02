@@ -46,6 +46,9 @@
 .about-section img {
     border-radius: 10px;
 }
+.about-section{
+    background-color: #f6f7f5e1;
+}
 .cta-section {
     background-color: rgb(58, 78, 58); 
     padding: 50px 0;
@@ -53,6 +56,18 @@
 
 .stats-section h3 {
     color: rgb(56, 75, 56); 
+}
+.stats-section{
+
+    background-image: url(../pics/moss.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Ensure full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content inside hero-section */
+    text-align: center;
+    position: relative;
 }
 
 .btn-success {
